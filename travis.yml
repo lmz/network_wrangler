@@ -1,0 +1,17 @@
+language: python
+
+services:
+  - docker
+
+env:
+  COMPOSE_VERSION: 3.2
+
+before_install:
+ - curl -L https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+ - chmod +x docker-compose
+ - sudo mv docker-compose /usr/local/bin
+
+script:
+  - cd docker
+  - docker-compose build docker-ci
+  - docker-compose run docker-ci py.test -c -m travis
