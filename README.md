@@ -2,6 +2,11 @@
 
 Network Wrangler is a Python library for managing travel model network scenarios.
 
+[![Master branch build status](https://travis-ci.org/wsp-sag/network_wrangler?branch=master)](https://travis-ci.org/wsp-sag/network_wrangler)  
+
+[![Documentation Status](https://readthedocs.org/projects/network-wrangler/badge/?version=latest)](https://network-wrangler.readthedocs.io/en/latest/?badge=latest)
+
+
 ## Installation
 Network Wrangler uses Python 3.6 and above.  Requirements are stored in `requiements.txt` but are automatically installed when using `pip`.
 
